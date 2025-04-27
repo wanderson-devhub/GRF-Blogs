@@ -1,5 +1,5 @@
-import { intl } from "@/config/intl";
 import createMiddleware from "next-intl/middleware";
+import { intl } from "@/config/intl";
 
 export default createMiddleware({
   locales: intl.locales,
@@ -8,5 +8,5 @@ export default createMiddleware({
 });
 
 export const config = {
-  matcher: "/((?!api|_next|.*\\..*).*)",
+  matcher: ["/((?!api|_next|.*\\..*).*)"],
 };
