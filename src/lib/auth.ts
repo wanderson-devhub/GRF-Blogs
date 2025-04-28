@@ -1,5 +1,5 @@
 import NextAuth from "next-auth";
-import prisma from "./db";
+import prisma from "./database";
 import { PrismaAdapter } from "@auth/prisma-adapter";
 import Nodemailer from "next-auth/providers/nodemailer";
 import Google from "next-auth/providers/google";
